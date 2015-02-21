@@ -8,21 +8,21 @@ const MAX = 4000000
 var first = 1
 var second = 2
 
-func is_even(num int) bool {
+func isEven(num int) bool {
 	return num % 2 == 0
 }
 
 func main() {
 	sum := 0
-	if is_even(first) {
+	if isEven(first) {
 		sum += first
 	}
-	if is_even(second) {
+	if isEven(second) {
 		sum += second
 	}
 	for (first + second) < MAX {
 		third := first+second
-		if is_even(third) {
+		if isEven(third) {
 			sum += third
 		}
 		first, second = second, third
