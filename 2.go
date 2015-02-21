@@ -7,9 +7,9 @@ import "fmt"
 const MAX = 4000000
 
 func main() {
-	var first, second = 1, 2
-	var third = first + second
-	var sum = 2
+	first, second := 1, 2
+	third := first + second
+	sum := 2
 	for third < MAX {
 		if third%2 == 0 {
 			sum += third
