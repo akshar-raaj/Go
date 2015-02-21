@@ -2,8 +2,10 @@ package main
 
 import "fmt"
 
-var num = 600851475143
-var nextPrime = 2
+var (
+	num = 600851475143
+	nextPrime = 2
+)
 
 func isPrime(num int) bool {
 	/* Finds if the passed number is prime or not*/
@@ -19,7 +21,7 @@ func setNextPrime() {
 	/* While factorizing if we find number is not divisible by 2
 	   no need to check with 2 during further factorization.
 	   We need to check with next prime numbers thereafter*/
-	var i = nextPrime + 1
+	i := nextPrime + 1
 	for isPrime(i) != true {
 		i += 1
 	}
