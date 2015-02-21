@@ -4,7 +4,7 @@ package main
 
 import "fmt"
 
-var MAX = 4000000
+const MAX = 4000000
 
 func main() {
 	var first, second = 1, 2
