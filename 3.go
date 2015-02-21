@@ -36,7 +36,7 @@ func isDivisible(dividend, divisor int) bool {
 }
 
 func main() {
-	var largest = 0
+	largest := 0
 	for num != 1 {
 		if isDivisible(num, nextPrime) {
 			num = num / nextPrime
