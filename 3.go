@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 var (
-	num = 600851475143
+	num       = 600851475143
 	nextPrime = 2
 )
 
