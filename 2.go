@@ -5,11 +5,12 @@ package main
 import "fmt"
 
 const MAX = 4000000
+
 var first = 1
 var second = 2
 
 func isEven(num int) bool {
-	return num % 2 == 0
+	return num%2 == 0
 }
 
 func main() {
@@ -21,7 +22,7 @@ func main() {
 		sum += second
 	}
 	for (first + second) < MAX {
-		third := first+second
+		third := first + second
 		if isEven(third) {
 			sum += third
 		}
