@@ -3,6 +3,9 @@ package main
 import "fmt"
 import "strconv"
 
+const MIN = 100
+const MAX = 999
+
 func checkPalindrome(s string) bool {
 	length := len(s)
 	half_length := length / 2
@@ -25,10 +28,10 @@ func checkPalindrome(s string) bool {
 
 func main() {
 	max := 1
-	i := 100
-	for i <= 999 {
-		j := 100
-		for j <= 999 {
+	i := MIN
+	for i <= MAX {
+		j := MIN
+		for j <= MAX {
 			if i > j {
 				j++
 				continue
