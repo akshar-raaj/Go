@@ -10,20 +10,17 @@ const MAX = 20
 
 func LCM(num1, num2 int) int {
 	//This looks like a good implementation of LCM
-	var greater int
-	var smaller int
 	var product int
-	if num1 > num2 {
-		greater = num1
-		smaller = num2
-	} else {
-		greater = num2
-		smaller = num1
+	//This function works with num1 being greater
+	if num1 >= num2 {
+		//pass
+	}else {
+		num1, num2 = num2, num1
 	}
 	i := 1
 	for {
-		product = greater * i
-		if product%smaller == 0 {
+		product = num1 * i
+		if product%num2 == 0 {
 			break
 		}
 		i++
