@@ -1,3 +1,6 @@
+/*Find the largest palindrome made from the product of two 3-digit numbers.*/
+/*go run 4.go*/
+
 package main
 
 import (
