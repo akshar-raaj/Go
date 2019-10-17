@@ -1,6 +1,6 @@
 /*Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.*/
 
-package main
+package euler
 
 import "fmt"
 
@@ -20,7 +20,7 @@ func sumN(n int) int {
 	return product / 2
 }
 
-func main() {
+func Six() {
 	var sumOfN = sumN(N)
 	var squareOfSumN = square(sumOfN)
 	var sumOfSquaresN = sumOfSquares(N)

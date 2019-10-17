@@ -1,15 +1,13 @@
 /*Find the largest palindrome made from the product of two 3-digit numbers.*/
 /*go run 4.go*/
 
-package main
+package euler
 
 import (
 	"fmt"
 	"strconv"
 )
 
-const MIN = 100
-const MAX = 999
 
 func checkPalindrome(s string) bool {
 	length := len(s)
@@ -31,7 +29,9 @@ func checkPalindrome(s string) bool {
 	return true
 }
 
-func main() {
+func Four() {
+    const MIN = 100
+    const MAX = 999
 	max := 1
 	i := MIN
 	for i <= MAX {

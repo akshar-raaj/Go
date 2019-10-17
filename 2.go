@@ -1,7 +1,7 @@
 /*By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms. Answer: 4613732*/
 /*go run 2.go*/
 
-package main
+package euler
 
 import "fmt"
 
@@ -14,7 +14,7 @@ func isEven(num int) bool {
 	return num%2 == 0
 }
 
-func main() {
+func Two() {
 	sum := 0
 	if isEven(first) {
 		sum += first

@@ -1,7 +1,7 @@
 /*What is the largest prime factor of the number 600851475143*/
 /*go run 3.go*/
 
-package main
+package euler
 
 import "fmt"
 
@@ -38,7 +38,7 @@ func isDivisible(dividend, divisor int) bool {
 	return false
 }
 
-func main() {
+func Three() {
 	largest := 0
 	for num != 1 {
 		if isDivisible(num, nextPrime) {
